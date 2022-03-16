@@ -1,0 +1,290 @@
+body {
+    color: #131313;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 14pt;
+    background-image: url("../images/back2.jpeg");
+    height: 4050px;
+  }
+
+
+
+#container {
+	width: 1280px;
+	height: auto;
+	background-color: white;
+	margin: auto;
+	opacity: 0.80;
+}
+
+/*Float the Aside so it displays next to Main.*/
+aside {
+    width: 150px;
+    height: 4050px;
+    background-color: rgba(124, 114, 88, 1.00);
+    float: left;
+}
+
+header {
+	width: 1280px;
+	height: 280px;
+	background-color: #008000;
+	background-image: url("../images/aboutheader.png");
+	background-position: 37% 0%;
+	background-repeat: no-repeat}
+
+/*Loat the Main so it shows up next to the Aside. Reduce width by 150px so they both line with header*/
+main {
+	width: 1100px;
+	height: 3700px;
+	padding: 10pt;
+	float: left;
+	
+}
+
+
+#container main {
+    height: 4000px;
+
+}
+article {
+    margin-bottom: 50px;
+}
+body aside {
+}
+	
+h1 {
+    color: rgba(200,179,129,1.00);
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25pt;
+}
+
+p{  font-family: haboro-contrast-normal,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;}
+
+h3 {
+	padding: 10px;
+	font-size: 12pt;
+}
+
+/*Clear the float so the footer shows up in the right place again*/
+
+footer {
+	width: 1280px;
+	height: 50px;
+	background-color: rgba(106,52,59,1.00);
+	clear: both;
+}
+img {
+    padding: 10px;
+    float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+article {
+	margin-bottom: 50px;
+	font-family: "my font";
+}
+
+nav {
+	width: 1280px;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	background-color: rgba(100,51,53, 1.00);
+}
+#container nav li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	margin: 0px 60px 0px 0px;
+	width: 80px;
+	font-family: neonoir, sans-serif;
+	font-size: 18pt;
+}
+#container {
+}
+#container nav ul {
+	margin: auto;
+	width: 600px;
+	padding-top: 5pt;
+	padding-left: 50pt;
+}
+
+	
+nav a:link {
+	color: rgba(206, 196, 175, 1.00);
+	text-decoration: none;	
+	padding: 10px;
+}
+nav a:visited {
+	text-decoration: none;
+	color: rgba(181, 163, 123, 1.00);
+}
+nav a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(200,179,129,1.00);
+}
+nav a:active {
+	text-decoration: none;
+	color: #202020;
+}
+#user_email {
+}
+
+
+
+.submit_btn {
+	width: 160px;
+	height: 30px;
+	border-radius: 10px;
+	background-color:  rgba(112, 93, 97, 1.00);
+	color: #FFFFFF;
+	font-size: 16px;
+	
+
+}
+tbody {
+	 font-family: haboro-contrast-normal,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+	color: rgba(60, 36, 30,1.00);
+}
+.submit_btn:hover {
+	background-color: rgba(106,52,59,1.00);
+	-webkit-box-shadow: 6px 6px 35px 1px #000000;
+	box-shadow: 6px 6px 35px 1px #000000;
+	
+}
+
+a {
+	color: rgba(106,52,59,1.00);
+}
+	
+	
+.column {
+	width: 250px;
+	height: 750px;
+	float: left;
+	margin-left: 60px;
+	margin-right: 20px;
+}
+/*Rules the page will follow for Tablet-sized devices*/
+@media (max-width: 1024px){
+	#container {
+		width: 768px;
+	}
+	
+	.column {
+	
+	margin-left: 35px;
+	margin-right: 2px;
+	}
+	 
+	
+	
+	nav {
+		width: 768px;
+	}
+	
+	main {
+		width: 590px;
+		
+	}
+	
+
+	
+	footer {
+		width: 768px;
+	}
+	
+	header {
+	width: 768px;
+background-position: top
+	}	
+}
+
+/*Rules the page will follow on mobile devices*/
+@media only screen and (max-width:375px){
+	#container {
+		width: 300px;
+	}
+	
+	
+	.column {
+	
+	margin-left: 22px;
+	margin-right: 2px;
+	}
+	 
+	
+	
+	nav {
+		width: 300px;
+		height: 300px;
+		position: static;
+	}
+	
+/* CSS Document */
+
+/*Copy these styles and paste them into the mobile media query in Project 3!*/
+
+	#container nav li {
+	display: list-item;
+	list-style-type: none;
+	float: none;
+	margin: 0px 0px 20px -25px;
+	width: 260px;
+	text-align: center;	
+	
+}
+	
+	#container nav ul {
+	width: 260px;
+}
+
+	nav a:link {
+	display: block;
+	width: 200px;
+	background-color: rgba(126,115,91,1.00);
+	color: rgba(234,217,177,1.00);
+	}
+	
+	nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+	main {
+		width: 300px;
+		
+	}
+	
+
+	
+	footer {
+		width: 300px;
+	}
+	
+	header {
+	width: 300px;
+		
+	background-image: url("../images/aboutheader300.png")
+
+	}	
+	aside{
+		display: none;
+	}
+	
+	h1{
+		margin-left: 25px;
+	}
+}
